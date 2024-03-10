@@ -1,24 +1,23 @@
 :root {
-  --content-max-width: 1240px;
+  --content-max-width: 80%;
   --content-padding: 0px;
   --header-space-above: 30px;
-  --body-bg-color: #e0e0e0;
+  --body-bg-color: #19191b;
   --background-image-height: 600px;
   --background-image-position: center 30%;
   --title-font-size: 2.5rem;
-  --content-bg-dark: #efefef;
-  --content-bg-light: #FFF;
-  --content-bg-accent: #f7f7f7;
-  --text-color-big: #000000;
-  --text-color-body: #414141;
-  --text-color-soft: #757575;
-  --bottom-line-color: #bdbdbd;
-  --sidebar-gradient-top: #FFF;
-  --sidebar-gradient-bottom: #FFF;
-  --sidebar-text-inactive: #414141;
+  --content-bg-dark: #19191b;
+  --content-bg-light: #1f2022;
+  --content-bg-accent: #242628;
+  --text-color-big: #0c0c0c;
+  --text-color-body: #c0c0c0;
+  --text-color-soft: #909090;
+  --bottom-line-color: #686868;
+  --sidebar-gradient-top: #292929;
+  --sidebar-gradient-bottom: #19191b;
+  --sidebar-text-inactive: #868686;
   --sidebar-text-active: #FFF;
   --character-desc-bio-heading-display: none;
-  --light-mode-icons: #959595;
 }
 p {
   font-size: .875em;
@@ -50,7 +49,7 @@ body.campaign-public-layout .title a {
 .op-icon-gm,
 .preview-content h2,
 .preview-content h3,
-.preview-contnet h1,
+.preview-content h1,
 .section-header.stream .name,
 .section-header.stream .section-header-icon,
 input[type=email]::placeholder,
@@ -89,7 +88,7 @@ textarea::placeholder {
 .item-show .main-content section,
 .sidebar-last-updated,
 body.campaign-public-layout .post-section.post-gm-only,
-body.campaign-public-layout .post-section.post-main {
+body.campaign-public-layout {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
@@ -118,11 +117,23 @@ body.campaign-public-layout .post-section.post-main {
   margin-bottom: 10px;
   padding-bottom: 2px;
 }
-.campaign-public-layout .main-content h2.adventure-log-post-title,
-.campaign-public-layout .main-content h2.character-name,
 .campaign-public-layout .main-content h2.title-edit,
 .campaign-public-layout .main-content h2.wiki-page-name {
   margin-top: 0;
+  color: #FFFFFF;
+}
+.campaign-public-layout .main-content h2.adventure-log-post-title,
+.campaign-public-layout .main-content h2.character-name,
+{
+  margin-top: 0;
+  color: #000000;
+}
+h2.character-name.title {
+  color: #FFFFFF;
+}
+span.characterPage {
+  color: #FFFFFF;
+  font-weight: 900;
 }
 .campaign-public-layout .main-content h4.gm-only-header.title {
   margin-top: 8px;
@@ -300,21 +311,19 @@ body.campaign-public-layout .post-section {
 .adventure-log-index .adventure-log-post,
 .adventure-log-show .post-comments,
 .adventure-log-show .post-header-container {
-  background: var(--content-bg-light);
-  color: var(--text-color-body);
 }
 .adventure-log-index .post-date,
 .adventure-log-index-filter .filter-header,
 .adventure-log-index-filter ul .active,
 .adventure-log-show .post-date {
-  background-color: var(--content-bg-light);
+  background-color: #6c0c0c;
 }
 .adventure-log-index .adventure-log-new-container,
-.sidebar-adventure-log-neighbors .neighbor-post .post-column {
+.sidebar-adventure-log-neighbors .neighbor-post {
   background-color: var(--content-bg-accent);
 }
 .sidebar-adventure-log-neighbors .neighbor-post .adventure-log-post-title {
-  color: var(--text-color-body);
+color: black;
 }
 .sidebar-adventure-log-neighbors {
   padding-right: 16px;
@@ -480,12 +489,13 @@ body.campaign-public-layout .post-section {
   max-width: 45%;
   margin: 0 0 16px 16px;
 }
-.campaign-public-layout #campaign-nav li .icon,
-.op-icon-gm,
-.section-header.stream .section-header-icon {
-  color: var(--light-mode-icons);
+.small-9{
+ width: 90%;
 }
-.campaign-public-layout #campaign-nav li.active .icon,
-.campaign-public-layout #campaign-nav li:hover .icon {
-  color: var(--sidebar-text-active);
+.adventure-log-show .post-date{
+ width: 30%;
+}
+.adventure-log-index .date-column
+{
+ width: 10%;
 }
